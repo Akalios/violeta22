@@ -1,0 +1,238 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    width: 100vw;
+    height: 100vh;
+    font-family: "montserrat", sans-serif;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+}
+#cabecera{
+    width: 100vw;
+    padding: 2rem 3rem 6rem;
+    display: flex;
+    flex-direction: row;
+    align-content:center;
+    justify-content: center;
+    background-color: rgb(32, 28, 28);
+}
+body h1{
+    width: 100vw;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-size: 24px;
+    text-align: center;
+}
+#viajes{
+    width: 100%;
+    height: 33.33%;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+section img{
+    width: 100%;
+    order: 1;
+}
+section h2{
+    margin-top: 0.8rem;
+    order: 2;
+    text-align: left;
+    font-size: 16px;
+}
+section p{
+    width: 100%;
+    height: 100%;
+    margin-top: 1.5rem;
+    order: 3;
+    text-align: left;
+    font-size: 12px;
+}
+button{
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+    order: 4;
+    position: absolute;
+    bottom: 1rem;
+    left: 20%;
+    right: 20%;
+}
+.viajes-item{
+    width: 33.33vw;
+    height: 57vh;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: flex-start;
+    
+}
+.uno{
+    background-color:lightblue;
+}
+.dos{
+    background-color:lightgreen;
+}
+.tres{
+    background-color:darkcyan;
+}
+@media screen and (max-width:768px){
+    html{
+        width: 100vw;
+        height: 100vh;
+        font-family: "montserrat", sans-serif;
+    }
+    body{
+        width: 100vw;
+        height: 100vh;
+        
+    }
+    #cabecera, h1{
+        display: none;
+    }
+    #viajes{
+        margin-top: 1.5rem;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+    }
+    section img{
+        order: 1;
+        margin: 1rem auto;
+        max-width: 300px;
+    }
+    section h2{
+        margin-top: 0.8rem;
+        order: 2;
+        text-align: left;
+        font-size: 16px;
+    }
+    section p{
+        width: 100%;
+        height: 100%;
+        margin-top: 1.5rem;
+        order: 3;
+        text-align: left;
+        font-size: 12px;
+    }
+    button{
+        width: 45%;
+        margin-left: auto;
+        margin-right: auto;
+        order: 4;
+        position: absolute;
+        bottom: 1rem;
+        left: 20%;
+        right: 20%;
+    }
+    .viajes-item{
+        min-width: 50%;
+        height: 100vh;
+        padding: 1rem;
+    }
+    .uno{
+        order: 2;
+        background-color:lightblue;
+    }
+    .dos{
+        order: 1;
+        background-color:lightgreen;
+    }
+    .tres{
+        order: 3;
+        margin: 0;
+        width: 100%;
+        background-color:darkcyan;
+}
+}
+@media screen and (max-width:480px){
+    html{
+        width: 100%;
+        height: 100%;
+        font-family: "montserrat", sans-serif;
+    }
+    body{
+        width: 100%;
+        height: 100%;
+    }
+    #cabecera{
+        width: 100%;
+        padding-top: 2rem;
+        padding-bottom: 0.3rem;
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+        background-color: rgb(32, 28, 28);
+    }
+    body h1{
+        padding-top: 1.5rem;
+        padding-bottom: 0.3rem;
+        display: block;
+        font-size: 24px;
+        text-align: center;
+    }
+    #viajes{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    section img{
+        margin-top: 0.1rem;
+        margin-bottom: 0.1rem;
+        width: 100%;
+        order: 1;
+    }
+    section h2{
+        order: 2;
+        text-align: left;
+        font-size: 16px;
+    }
+    section p{
+        width: 100%;
+        height: 100%;
+        margin-top: 1.5rem;
+        order: 3;
+        text-align: left;
+        font-size: 12px;
+    }
+    button{
+        width: 45%;
+        margin-left: auto;
+        margin-right: auto;
+        order: 4;
+        position: absolute;
+        bottom: 1rem;
+        left: 20%;
+        right: 20%;
+    }
+    .viajes-item{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        align-items: flex-start;
+        
+    }
+    .uno{
+        order: 1;
+        background-color:lightblue;
+    }
+    .dos{
+        background-color:lightgreen;
+    }
+    .tres{
+        background-color:darkcyan;
+}
+}

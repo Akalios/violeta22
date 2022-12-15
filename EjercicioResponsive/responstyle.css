@@ -1,0 +1,107 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    width: 100vw;
+    height: 100vh;
+    font-family: "montserrat", sans-serif;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("/EjercicioResponsive/images/bg.png");
+}
+header{
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-content: flex-start;
+
+}
+main{
+    margin-top: 3rem;
+    gap: 3rem;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-content: space-between;
+
+}
+main article{
+    width: 150px;
+    height: 150px;
+    background-image: url("/EjercicioResponsive/images/bgButton.png");
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: contain;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 0.7rem;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 3rem;
+    }
+article img{
+    margin: 1vh 90vw;
+    width: 60px;
+}
+    @media screen and (max-width:480px){
+        html{
+            width: 100vw;
+            height: 100vh;
+            font-family: "montserrat", sans-serif;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            background-image: url("/EjercicioResponsive/images/bg.png");
+        }
+        header{
+            padding: 1rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content:center;
+            align-content: flex-start;
+        }
+        main{
+            margin-top: 3rem;
+            gap: 3rem;
+            display: flex;
+            flex-wrap:wrap;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+        
+        }
+        main article{
+            width: 150px;
+            height: 150px;
+            background-image: url("/EjercicioResponsive/images/bgButton.png");
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-size: contain;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            font-size: 0.9rem;
+            font-weight: 500;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin: 3rem;
+            }
+    }

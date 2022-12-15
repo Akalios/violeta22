@@ -1,0 +1,150 @@
+*,
+::before,
+::after,
+html{
+    margin: 0;
+    padding: 0;
+    font-family: "inter", sans-serif;
+    font-size: 17px;
+    line-height: 1.5rem;
+    /*font: 17px/1.5rem;*/
+}
+body{
+    padding: 3rem;
+}
+h1{
+    text-align: center;
+    font-size: 2.5rem;
+    line-height: 4rem;
+}
+img{
+    max-width: 100%;
+}
+p{
+    margin: 1.5rem;
+}
+ul{
+    padding: 1rem 4rem;
+}
+.cambioCaja{
+    text-transform: lowercase;
+}
+.cambioCaja span{
+    text-transform: capitalize;
+}
+div{
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 5rem;
+}
+.contenedor{
+    background-color: aqua;
+    display: flex;
+    flex-direction: row;
+    /*height: 100px;*/
+}
+.elemento{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background-color: darkorange;
+}
+
+.contenedor2{
+    background-color: rgb(54, 156, 7);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    /*height: 100px;*/
+}
+.element{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background-color: rgb(255, 146, 12);
+}
+
+.contenedor3{
+    background-color: darkgreen;
+    display: flex;
+    flex-flow: row wrap;
+    /*align-items: center;*/
+    justify-content: center;
+    overflow: hidden;
+    align-items: baseline;
+}
+.elemen{
+    width: 100px;
+    margin: 10px;
+    background-color: rgb(255, 239, 12);
+}
+
+.uno{
+    font-size: 5rem;
+    margin-top: 2rem;
+    line-height: 10rem;
+}
+.dos{
+    font-size: 1rem;
+    padding-top: 2rem;
+    line-height: 10rem;
+}
+
+.contenedor4{
+    background-color: darkgreen;
+    height: 600px;
+    display: flex;
+    flex-flow: row wrap;
+    /*align-items: center;*/
+    justify-content: center;
+    overflow: hidden;
+    align-items: center;
+    align-content: space-between;
+}
+.eleme{
+    width: 100px;
+    margin: 10px;
+    background-color: rgb(255, 239, 12);
+}
+.flex-container{
+    background-color: rgb(56, 87, 56);
+    display: flex;
+    column-gap: 1rem;
+    justify-content: center;
+}
+
+.flex-container>div{
+    background-color: rgb(198, 211, 59);
+    color: black;
+    width: 100px;
+    text-align: center;
+    line-height: 4rem;
+}
+div.orden{
+    flex-grow: 1;
+    background-color: red;
+}
+div.grow{
+    flex-grow: 1;
+}
+div.grow2{
+    flex-grow: 3;
+}
+div.shrink{
+    flex-shrink: 2;
+}
+div.shrink2{
+    flex-shrink: 4;
+}
+div.basis{
+    flex-basis: 50%;
+}
+div.paraladiv2{
+    flex: 1 1 200px;
+    background-color: blue;
+}
+div.paraladiv3{
+    flex: 0 2 400px;
+    background-color: red;
+}

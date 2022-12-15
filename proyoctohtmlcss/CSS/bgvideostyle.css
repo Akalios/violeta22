@@ -1,0 +1,27 @@
+*, 
+::before,
+::after{
+    margin: 0px;
+}
+html, body{
+    width: 100vw;
+    min-height: 100vh;
+}
+header{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+}
+video{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100vw;
+    min-height: 100vh;
+    z-index: -100;
+    object-fit: cover;
+    object-position: center;
+}

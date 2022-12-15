@@ -1,0 +1,122 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+@media screen and (max-width:480px){
+    html{
+        width: 100vw;
+        height: 100vh;
+        font-family: "montserrat", sans-serif;
+        font-size: 14px;
+    }
+    body{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    nav{
+        width: 100%;
+        background-color:darkturquoise;
+    }
+    .container{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .container header{
+        width: 100vw;
+        height: 20vh;
+        background-color: rgb(156, 219, 93);
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    article{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: coral;
+    }
+    .myForm{
+        width: 90vw;
+        height: 75vh;
+        padding-top: 2.3rem;
+        background-color: coral;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items:center;
+        border: 1px solid grey;
+        border-radius: 20px;
+        margin: 1rem;
+    }
+    .myForm .contact{
+        width: 92vw;
+        margin: 0.6rem;
+        margin-bottom: -1.5rem;
+        padding-bottom: 0.3rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .contact input[type=text]{
+        margin: 0.5rem;
+        padding: 0.5rem;
+        box-sizing: border-box;
+    }
+    .contact input[type=email]{
+        margin: 0.5rem;
+        padding: 0.5rem;
+        box-sizing: border-box;
+    }
+    .contact label{
+        padding: 0.3rem;
+    }
+    .myForm .message{
+        width: 90vw;
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
+        margin-bottom: 3rem;
+    }
+    .message label{
+        padding: 0.5rem 0;
+    }
+    .message textarea{
+        box-sizing: border-box;
+        padding: 3rem;
+    }
+    .myForm .envio{
+        padding: 0.5rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .envio .borrar{
+        padding: 0 0.5rem;
+        text-decoration: none;
+        color: white;
+        text-align: center;
+        background-color: rgb(202, 17, 17);
+    }
+    .envio button{
+        padding: 0 0.5rem;
+        text-decoration: none;
+        color: white;
+        text-align: center;
+        background-color: green;
+    }
+    aside{
+        width: 100vw;
+        background-color: greenyellow;
+    }
+    .container footer{
+        width: 100vw;
+        height: 20vh;
+        background-color: rgb(156, 219, 93);
+    }
+}

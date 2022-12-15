@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio y Vídeo || HTML y CSS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+<header>
+       <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="imagenes.html">Imágenes</a></li>
+            <li><a class="active" href="audiovideo.html">Audio/Vídeo</a></li>
+            <li><a href="iframes.html">Marcos Flotantes</a></li>
+            <li><a href="formularios/index.html">Contactar</a></li>
+        </ul>
+       </nav> 
+</header>
+    <main>
+    <h1>Audio y Vídeo con HTML5</h1>
+        <section>
+            <h2>Audio</h2>
+            <p>Desde HTML5 disponemos de la etiqueta &lt;audio></p>
+            <div>
+                <audio controls src="/proyoctohtmlcss/audiovideo/hakunaMatataItMeansNoWorries.mp3"></audio>
+                <audio controls>
+                    <source src="/proyoctohtmlcss/audiovideo/hakunaMatataItMeansNoWorries.ogg" type="audio/ogg">
+                    <source src="/proyoctohtmlcss/audiovideo/hakunaMatataItMeansNoWorries.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+        </section>
+        <section>
+            <h2>Vídeo</h2>
+            <p>Desde HTML5 disponemos de la etiqueta &lt;video></p>
+            <div>
+                <!-- <video controls poster="/proyoctohtmlcss/audiovideo/leon.jpg" src="/proyoctohtmlcss/audiovideo/leon.mp4"></video> -->
+                <video id="video1">
+                    <source src="/proyoctohtmlcss/audiovideo/video.mp4" type="video/mp4">
+                    <source src="/proyoctohtmlcss/audiovideo/video.ogv" type="video/ogg">
+                </video>
+            </div>
+            <div id="controles">
+                <!-- button.boton{Play/pause}+button.boton{Play}+button.boton{Pause} -->
+                <button id="playpause" class="boton demo">Play/pause</button> ||
+                <button id="play" class="boton demo">Play</button> ||
+                <button id="pause" class="boton demo">Pause</button> 
+            </div>
+        </section>
+        <section>
+            <h2>Enlace a demo HTML con diversas imágenes de fondo</h2>
+            <div class="botones">
+                <input id="demo1" class="demo" value="Abrir demo con javascript">
+            <button id="demo2" class="demo2" href="javascript:abrirVideoFondo();">Abrir la misma demo desde un hipervínculo</div></button>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <p>Calle Desierta, s/n - 0202222 <strong>Bolonia del Sur</strong> <strong><em>Michigalandia</em></strong><p>&copy; <a href="https://yomismo.com" target="new">yomismo.com</a> || <a href="mailto:info@yomismo.com">contacta con nosotros por email</a></p></p>
+        </div>
+        <div>
+            <p><a href="tel:555555555"> &#9742; Puedes contactar por teléfono</a> o por</p><a href="https://api.whatsapp.com/send?phone=555555555&text=Hola!"> <i class="fa fa-whatsapp"></i> WhatsApp</a>
+        </div>
+    </footer>
+    <script src="/javascript/scriptsvideo.js"></script>
+    <script>
+        function abrirVideoFondo(){
+            window.open("bgvideo.html", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=500,width=800,height=800");
+        }
+        var myVideo = document.getElementById("video1"); 
+        function playPause() { 
+        if (myVideo.paused) 
+            {myVideo.play();} 
+        else 
+            {myVideo.pause();} 
+        } 
+        function reproduce(){
+            myVideo.play();
+        }
+        function pausa(){
+            myVideo.pause();
+        }
+    </script>
+</body>
+</html>

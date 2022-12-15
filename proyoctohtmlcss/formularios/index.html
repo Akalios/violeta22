@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactar con CIFO La Violeta || HTML y CSS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+<header>
+       <nav>
+        <label for="menu" class="showmenu">&equiv;</label>
+        <input type="checkbox" name="menu" id="menu">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../imagenes.html">Imágenes</a></li>
+            <li><a href="../audiovideo.html">Audio/Vídeo</a></li>
+            <li><a href="../iframes.html">Marcos Flotantes</a></li>
+            <li><a class="active" href="formularios/index.html">Contactar</a></li>
+        </ul>
+       </nav> 
+</header>
+    <main>
+    <h1>Formularios con HTML</h1>
+    <h3>Contacta con nosotros</h3>
+    <form action="directorio/gestor.php" method="get" id="firstContact" name="firstContact">
+        <fieldset>
+            <legend>
+                Datos Personales
+            </legend>
+            <div>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Indica tu nombre" pattern="[A-ZÀ]{1}[a-zA-ZÀ-ÿ\u00f1\u00d1\s]{2,40}">
+            </div>
+            <div>
+            <label for="email">Correo electrónico</label>
+            <input type="text" name="email" id="email" placeholder="Introduce tu correo electrónico" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-z]{2,9}">
+            </div>
+            <div>
+            <label for="cp">Código postal</label>
+            <input type="text" name="cp" id="cp" placeholder="ej:07860" pattern="[0-9]{5}">
+            </div>
+            <div>
+            <label for="telefono">Teléfono</label>
+            <input type="number" name="teléfono" id="teléfono" required placeholder="ej:633333333" min="600000000" max="999999999" size="9">
+            </div>
+            <p>Sexo:</p>
+            <div>
+            <input type="radio" name="sexo" id="hombre" value="hombre">
+            <label for="hombre">Hombre</label>
+            <input type="radio" name="sexo" id="mujer" value="mujer">
+            <label for="mujer">Mujer</label>
+            <input type="radio" name="sexo" id="no_binario" value="no_binario">
+            <label for="no_binario">No Binario</label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Aficiones</legend>
+            <p>Indica las consolas con las que juegas</p>
+            <div>
+        <label for="xbox">XBOX</label>
+        <input type="checkbox" name="xbox" id="xbox">
+        <label for="xbox">PS5</label>
+        <input type="checkbox" name="ps5" id="ps5">
+        <label for="xbox">Switch</label>
+        <input type="checkbox" name="switch" id="switch">
+        </div>
+        <div>
+        <label for="so">Sistema Operativo preferido</label>
+        <select name="so" id="so">
+            <option value="" selected>Selecciona un SO</option>
+            <option value="Windows">Windows</option>
+            <option value="IOS">Mac</option>
+            <option value="Linux">Linux</option>
+        </select>
+        </div>
+        <div class="top">
+        <label for="Indica en qué te podemos ayudar"></label>
+        <textarea name="content" id="content" cols="30" rows="10">Queremos colaborar contigo</textarea>
+        </div>
+        </fieldset>
+        <fieldset>
+        <div class="botones">
+            <input class="demo" type="reset" value="Borrar formulario">
+            <input class="demo" type="submit" value="Enviar formulario">
+        </div>
+        </fieldset>
+    </form>
+    </main>
+    <footer>
+        <div>
+            <p>Calle Desierta, s/n - 0202222 <strong>Bolonia del Sur</strong> <strong><em>Michigalandia</em></strong><p>&copy; <a href="https://yomismo.com" target="new">yomismo.com</a> || <a href="mailto:info@yomismo.com">contacta con nosotros por email</a></p></p>
+        </div>
+        <div>
+            <p><a href="tel:555555555"> &#9742; Puedes contactar por teléfono</a> o por</p><a href="https://api.whatsapp.com/send?phone=555555555&text=Hola!"> <i class="fa fa-whatsapp"></i> WhatsApp</a>
+        </div>
+    </footer>
+</body>
+</html>

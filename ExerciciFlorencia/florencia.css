@@ -1,0 +1,58 @@
+*,
+::before,
+::after,
+html{
+    margin: 0;
+    padding: 0;
+    font-family: "montserrat", sans-serif;
+}
+body{
+    background-color: rgb(204, 219, 181);
+    padding-bottom: 4rem;
+}
+.wrapper h1{
+    padding: 1rem;
+    font-size: 24px;
+    color: rgb(10, 10, 164);
+    text-align: right;
+    text-transform:uppercase;
+    letter-spacing: 1rem;
+}
+.wrapper{
+    padding: 1rem;
+}
+.wrapper p{
+    text-align: left;
+    text-align: justify;
+}
+.wrapper h2{
+    margin-top: 1rem;
+    background-color: rgb(78, 133, 78);
+    color: white;
+    font-weight: 700;
+    clear: both;
+}
+.wrapper>img{
+    margin-top: 1rem;
+    max-width: 150px;
+}
+.izq{
+   float: left;
+   padding-bottom: 0.4rem;
+   padding-right: 0.4rem;
+}
+.der{
+    float: right;
+    padding-bottom: 0.8rem;
+    padding-left: 0.4rem;
+}
+.centrado>img{
+    margin-left: 35%;
+    padding-top: 1rem;
+    padding-bottom: 0.6rem;
+    max-width: 150px;
+}
+address{
+    margin-top: 1rem;
+    font-size: 12px;
+}

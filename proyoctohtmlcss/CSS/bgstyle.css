@@ -1,0 +1,14 @@
+*, 
+::before,
+::after{
+    margin: 0px;
+}
+html, body{
+    width: 100vw;
+    min-height: 100vh;
+    background-image: url(../img/gif1.gif), url(../img/background.jpg);
+    background-size: 50% cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
