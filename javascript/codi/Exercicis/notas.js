@@ -3,7 +3,7 @@ let nota = Number(prompt(`Cual es la nota del alumno? `));
 if(nota < 5){
     alert(`La nota es: ${nota}, Suspenso`);
     console.log(`El alumno con un ${nota} ha suspendido`);
-}else if(nota 6 <= 5){
+}else if(nota 5 < 6){
     alert(`La nota es: ${nota}, Aprobado`);
     console.log(`El alumno con un ${nota} ha aprobado`);
 }
